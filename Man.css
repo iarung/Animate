@@ -1,0 +1,39 @@
+body {
+
+	background-color:white;
+	
+}
+
+#runner {
+	width: 60px;
+	height: 104px;
+	background: 	url("E:/Animation/WalkingCharcter/image/Man.png");
+	animation: walk 1s steps(8) infinite, 
+	forward 10s linear infinite;
+}
+
+#road {
+	border-bottom:7px dashed;
+}
+
+@keyframes walk {
+	 0% {
+		background-position: 0px;
+	} 
+	100% {
+		background-position: -480px;		
+	}
+}
+
+@keyframes forward {
+	0% {
+		
+		transform: translateX(-100px);
+	  
+	  }
+	100% {
+
+		transform: translateX(1200px);
+	    
+	    }
+}
